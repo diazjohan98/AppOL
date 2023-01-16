@@ -1,10 +1,16 @@
 # Getting Started with Create React App
 
+TALLER EN REACT dado por el lider en OLsoftware
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run: 
+
+para iniciar la base de datos del login 
+### `json-server --watch peliculas.json`
 
 ### `npm start`
 

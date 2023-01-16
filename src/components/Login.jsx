@@ -38,10 +38,10 @@ manejadorBoton=()=>{
    const usuarios = response.data;
    usuarios.forEach(esUsuario => {
     if (esUsuario?.user === user && esUsuario?.password === password) {
-      alert("Bienvenido SAPA");
+      alert("Bienvenido al Gestor de proyectos de OLsoftware");
     }
     else{
-      alert("Que esta haciendo SAPA");
+      alert("Estas introducciendo algo mal PANITA!!!!");
     }
    });
     
