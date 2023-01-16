@@ -11,7 +11,7 @@ In the project directory, you can run:
 
 para iniciar la base de datos del login 
 ### `json-server --watch peliculas.json`
-
+comando para inicializar la aplicacion
 ### `npm start`
 
 Runs the app in the development mode.\
