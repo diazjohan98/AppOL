@@ -5,7 +5,7 @@ class Editar extends React.Component{
 
     render() {
         return(
-            <div>
+            <div c>
                 Hola desde Editar 
             </div>
         );
