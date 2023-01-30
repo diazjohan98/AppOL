@@ -1,0 +1,30 @@
+:root {
+    --light: #fff;
+    --gray: #c4ccde;
+    --purple: #660E9C;
+  }
+  .navbar {
+    background-color: var(--light);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--gray);
+    height: 50px;
+}
+
+.profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .iconoNotificacion{
+    color: var(--purple);
+    font-size: 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .iconoBar{
+    color: var(--gray);
+    margin-left: 99px;
+    cursor: pointer;
+  }

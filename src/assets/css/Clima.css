@@ -1,0 +1,34 @@
+
+.climaCity{
+    position: absolute;
+    padding-left: 376px;
+    padding-top: 28px;
+    font-weight: bold;
+}
+.climaCity2{
+    position: absolute;
+    padding-left: 376px;
+    padding-top: 42px;
+    font-size: 14px;
+}
+.climaTemp{
+    position: absolute;
+    font-size: 30px;
+    padding-left: 300px;
+    padding-top: 20px;
+}
+.card-desc{
+    position: absolute;
+    padding-left: 250px;
+    padding-top: 18px;
+}
+.clima-cali{
+    font-size: 30px;
+}
+
+.imgClima{
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+}

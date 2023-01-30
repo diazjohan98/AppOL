@@ -1,11 +1,11 @@
-import "../../assets/css/Login.css"
+import "../../assets/css/Login.css";
 import logo from "../../assets/img/LogoOl.jfif";
 import React from "react";
-import { ApiUrl } from "../../services/apirest";
 import axios from "axios";
-// import { useHistory } from 'react-router-dom';
+// import { userLogin } from "../../services/apiLogin";
+import { useHistory  } from 'react-router-dom';
 
-class Login extends React.Component {
+class Login extends React.Component{
 
   state = {
     form: {
@@ -16,6 +16,7 @@ class Login extends React.Component {
     errorMsg: "",
   };
 
+  
   manejadorSubmit = (e) => {
     e.preventDefault();
   };
@@ -31,26 +32,21 @@ class Login extends React.Component {
   };
 
   manejadorBoton = () => {
-
-    let url = ApiUrl;
+    
     const { user, password } = this.state.form;
+    let url = `http://localhost:3000/login?user=${user}&password=${password}`;
     axios
       .get(url)
       .then((response) => {
         const usuarios = response.data;
-        usuarios.forEach((esUsuario) => {
-          if (esUsuario?.user === user && esUsuario?.password === password) {
-            // alert("Bienvenido al gestor de proyectos de OLsoftware");
-            // localStorage.setItem("token", response.data.result.token);
-            window.Location.href="c: /Users/johan.vasquez/Documents/Taller-react/mi-proyecto-react/src/components/Dashboard.jsx";
-            // history.replace("./Dashboard.jsx")
-          } else {
-            this.setState({
-              error: true,
-              errorMsg: "Error al ingresar los valores",
-            });
-          }
-        });
+        if (usuarios.length >= 1) {
+          console.log("Esa era mi muchacho");
+        } else {
+          this.setState({
+            error: true,
+            errorMsg: "Error al ingresar los valores",
+          });
+        }
       })
       .catch((error) => {
         console.log(error);
@@ -112,7 +108,7 @@ class Login extends React.Component {
         </div>
       </React.Fragment>
     );
-  }
+            }
 }
 
 export default Login;

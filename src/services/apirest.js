@@ -1,1 +1,2 @@
-export const ApiUrl = "http://localhost:3000/users";
+export const ApiUrl = "http://localhost:3000/login?user={User}&password={Password}";
+

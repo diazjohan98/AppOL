@@ -1,5 +1,5 @@
 {
-  "users": [
+   "login": [
     {
       "id": 1,
       "user": "johan.d",
@@ -10,5 +10,66 @@
       "user": "sebas.d",
       "password": "12345"
     }
+  ],
+  
+  "projects": [
+    {
+      "id": 99,
+      "project_name": "Maecenas Mi LLP",
+      "repo_url": "https://",
+      "client": "Enim Nunc Ut Incorporated",
+      "developers": "Joan Alexis Cordoba Narvaez",
+      "ci": false,
+      "cd": true,
+      "frontend_tecnology": "VueJS|Angular|React-Native",
+      "backend_tecnology": "NodeJS",
+      "databases": "ORACLE|PosgresSQL",
+      "errors_count": 24,
+      "warning_count": 9,
+      "deploy_count": 8,
+      "percentage_completion": 62,
+      "report_nc": 125,
+      "status": "En Desarrollo"
+     },
+
+     {
+      "id": 100,
+      "project_name": "Balance",
+      "repo_url": "https://",
+      "client": "Celsia",
+      "developers": "Johan Sebastian Diaz ",
+      "ci": true,
+      "cd": false,
+      "frontend_tecnology": "VueJS",
+      "backend_tecnology": ".net",
+      "databases": "SQLSERVER",
+      "errors_count": 24,
+      "warning_count": 9,
+      "deploy_count": 8,
+      "percentage_completion": 82,
+      "report_nc": 125,
+      "status": "En Desarrollo"
+     },
+
+     {
+      "id": 101,
+      "project_name": "Comfenalco APP",
+      "repo_url": "https://",
+      "client": "Comfenalco",
+      "developers": "Joan Alexis Cordoba Narvaez",
+      "ci": false,
+      "cd": true,
+      "frontend_tecnology": "React-Native",
+      "backend_tecnology": "NodeJS",
+      "databases": "ORACLE|PosgresSQL",
+      "errors_count": 24,
+      "warning_count": 9,
+      "deploy_count": 8,
+      "percentage_completion": 12,
+      "report_nc": 125,
+      "status": "En Desarrollo"
+     }
+     
+     
   ]
 }
