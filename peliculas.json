@@ -1,5 +1,5 @@
 {
-   "login": [
+  "login": [
     {
       "id": 1,
       "user": "johan.d",
@@ -11,7 +11,6 @@
       "password": "12345"
     }
   ],
-  
   "projects": [
     {
       "id": 99,
@@ -30,9 +29,8 @@
       "percentage_completion": 62,
       "report_nc": 125,
       "status": "En Desarrollo"
-     },
-
-     {
+    },
+    {
       "id": 100,
       "project_name": "Balance",
       "repo_url": "https://",
@@ -49,9 +47,8 @@
       "percentage_completion": 82,
       "report_nc": 125,
       "status": "En Desarrollo"
-     },
-
-     {
+    },
+    {
       "id": 101,
       "project_name": "Comfenalco APP",
       "repo_url": "https://",
@@ -68,8 +65,24 @@
       "percentage_completion": 12,
       "report_nc": 125,
       "status": "En Desarrollo"
-     }
-     
-     
+    },
+    {
+      "project_name": "App-OL",
+      "client": "Olsoftware",
+      "repo_url": "https://",
+      "developers": "Leandro",
+      "cl": "",
+      "cd": "",
+      "frontend_tecnology": "Vasquez",
+      "backend_tecnology": "Cifuentes",
+      "databases": "SQL",
+      "warning_count": "",
+      "errors_count": "",
+      "deploy_count": "",
+      "percentage_completion": "",
+      "report_nc": "",
+      "ci": "",
+      "id": 102
+    }
   ]
 }
