@@ -1,0 +1,133 @@
+.container-proyect{
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px;
+}
+.container-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.btnProyect{
+    background-color: #660E9C;
+    color: #fff;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #81519e;
+    border-color: #81519e;
+    
+}
+.textTittle{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.containerTabla{
+    margin: 10px;
+    margin-top: 40px;
+    font-size: 15px;
+    overflow: auto;
+}
+
+.table{
+    overflow: scroll;
+}
+
+thead {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+th{
+    padding: 10px;
+    border-bottom: 2px solid #c4ccde;
+    margin-bottom: 10px;
+    
+}
+tbody{
+    padding-top: 40px;
+    font-size: 12px;
+}
+tr {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.state{
+    background: #f1ee1f;
+}
+
+button{
+    border: none;
+}
+
+.iconoEditar{
+    color: #660E9C;
+    border: none;
+    background: #fff;
+}
+
+.iconoEliminar{
+    color: #660E9C;
+}
+
+/* ------ MODAL --------------- */
+
+.titleModal{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.closeModalX{
+    margin-top: -44px;
+    cursor: pointer;
+}
+
+.modal-body{
+    font-size: 12px;
+}
+.form-control{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.inputLabel{
+    margin-top: 10px;
+    margin-left: 6px;
+}
+.textCheck{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.input-cuadro{
+    margin-left: 10px;
+    width: 15px;
+    position: relative;
+    top: 3px;
+}
+
+.saveBoton{
+    background: #116be0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 6px;
+}
+.saveBoton:hover{
+    background: #389bc9;
+}
+
+.deletBoton{
+    background: #939496;
+    color: #fff;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.deletBoton:hover{
+    background: #9f9fa8;
+}
