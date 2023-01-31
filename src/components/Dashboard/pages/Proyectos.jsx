@@ -7,12 +7,14 @@ import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import axios from "axios";
 
 const url = "http://localhost:3000/projects"
+// const urlPut = `http://localhost:3000/projects/${id}`
 
 export default class Proyectos extends Component {
     state = {
         data: [],
         modalInsertar: false,
         form: {
+            id: '',
             project_name: '',
             client: '',
             repo_url: '',
@@ -22,11 +24,11 @@ export default class Proyectos extends Component {
             frontend_tecnology: '',
             backend_tecnology: '',
             databases: '',
-            warning_count: '',
-            errors_count: '',
-            deploy_count: '',
-            percentage_completion: '',
-            report_nc: '',
+            warning_count: '0',
+            errors_count: '0',
+            deploy_count: '0',
+            percentage_completion: '0',
+            report_nc: 'En desarrollo',
             tipoModal: ''
         }
     }
@@ -48,8 +50,8 @@ export default class Proyectos extends Component {
         })
     }
 
-    peticionPut=()=>{
-        axios.put(url+this.state.form.id, this.state.form).then(response=>{
+    peticionPut = () => {
+        axios.put(`http://localhost:3000/projects/${this.state.form.id}`, this.state.form).then(response => {
             this.modalInsertar();
             this.peticionGet();
         })
@@ -63,6 +65,7 @@ export default class Proyectos extends Component {
         this.setState({
             tipoModal: 'actualizar',
             form: {
+                id: project.id,
                 project_name: project.project_name,
                 client: project.client,
                 repo_url: project.repo_url,
@@ -76,9 +79,10 @@ export default class Proyectos extends Component {
                 errors_count: project.errors_count,
                 deploy_count: project.deploy_count,
                 percentage_completion: project.percentage_completion,
-                report_nc: project.repo_url,
+                report_nc: project.repo_url
             }
         })
+   
     }
 
     handleChange = async e => {
@@ -89,7 +93,7 @@ export default class Proyectos extends Component {
                 [e.target.name]: e.target.value
             }
         });
-        console.log(this.state.form);
+        // console.log(this.state.form);
     }
     componentDidMount() {
         this.peticionGet();
@@ -103,13 +107,14 @@ export default class Proyectos extends Component {
             <div className="container-proyect">
                 <div className="container-navbar">
                     <p className="textTittle">Lista De Proyectos Registrados</p>
-                    <button className="btnProyect btn btn-prymary" onClick={()=>{this.setState({form: null, tipoModal: 'insertar'}); this.modalInsertar()}}> Nuevo Proyecto </button>
+                    <button className="btnProyect btn btn-prymary" onClick={() => { this.setState({ form: null, tipoModal: 'insertar' }); this.modalInsertar() }}> Nuevo Proyecto </button>
                 </div>
 
                 <div className="containerTabla">
                     <table className="table">
                         <thead>
                             <tr>
+                                <th scope="col">ID</th>
                                 <th scope="col">Proyectos</th>
                                 <th scope="col">Clientes</th>
                                 <th scope="col">Repositorios</th>
@@ -133,6 +138,7 @@ export default class Proyectos extends Component {
                             {this.state.data.map(project => {
                                 return (
                                     <tr>
+                                        <td>{project.id}</td>
                                         <td>{project.project_name}</td>
                                         <td>{project.client}</td>
                                         <td>{project.repo_url}</td>
@@ -142,14 +148,14 @@ export default class Proyectos extends Component {
                                         <td>{project.frontend_tecnology}</td>
                                         <td>{project.backend_tecnology}</td>
                                         <td>{project.databases}</td>
-                                        <td>{project.warning_count}</td>
-                                        <td>{project.errors_count}</td>
-                                        <td>{project.deploy_count}</td>
+                                        <td>{project.warning_count} 0</td>
+                                        <td>{project.errors_count} 0 </td>
+                                        <td>{project.deploy_count} 0</td>
                                         <td>{project.percentage_completion}%</td>
-                                        <td>{project.report_nc}</td>
-                                        <td className="state">{project.status}</td>
+                                        <td>{project.report_nc} 0 </td>
+                                        <td className="state">{project.status} En desarrollo</td>
                                         <td className="btnEditEli">
-                                            <button><FaIcons.FaRegEdit className="iconoEditar" onClick={()=>{this.seleccionarEmpresa(project); this.modalInsertar()}}/></button>
+                                            <button><FaIcons.FaRegEdit className="iconoEditar" onClick={() => { this.seleccionarEmpresa(project); this.modalInsertar() }} /></button>
                                             {"   "}
                                             <button><FaIcons.FaTrashAlt className="iconoEliminar" /></button>
                                         </td>
@@ -171,6 +177,8 @@ export default class Proyectos extends Component {
                     </ModalHeader>
                     <ModalBody>
                         <div className="form-group">
+                            <label htmlFor="id">ID</label>
+                            <input className="form-control" type="text" name="id" id="id" readOnly onChange={this.handleChange} value={form ? form.id : this.state.data.length + 1} />
                             <label className="inputLabel" htmlFor="id">Proyecto</label>
                             <input type="text" name="project_name" id="proyecto" onChange={this.handleChange} value={form ? form.project_name : ''} />
                             <br />
@@ -221,10 +229,10 @@ export default class Proyectos extends Component {
                     </ModalBody>
 
                     <ModalFooter>
-                        {this.state.tipoModal == 'Insetar' ?
-                            <button className="saveBoton" onClick={() => this.peticionPost()}>
-                                Save Change
-                            </button> : <button className="saveBoton" onClick={() => this-this.peticionPut()} >
+                        {this.state.tipoModal === 'insertar' ?
+                            <button className="btn btn-success" onClick={() => this.peticionPost()}>
+                                Insertar
+                            </button> : <button className="btn btn-primary" onClick={() => this.peticionPut()}>
                                 Actualizar
                             </button>
                         }
