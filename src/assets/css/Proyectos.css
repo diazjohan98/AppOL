@@ -28,7 +28,6 @@
 .containerTabla{
     margin: 10px;
     margin-top: 40px;
-    font-size: 15px;
     overflow: auto;
 }
 
@@ -49,7 +48,7 @@ th{
 }
 tbody{
     padding-top: 40px;
-    font-size: 12px;
+    font-size: 10px;
 }
 tr {
     padding-top: 10px;

@@ -15,20 +15,18 @@
     {
       "id": 99,
       "project_name": "Maecenas Mi LLP",
-      "repo_url": "https://",
       "client": "Enim Nunc Ut Incorporated",
+      "repo_url": "https://",
       "developers": "Joan Alexis Cordoba Narvaez",
-      "ci": false,
       "cd": true,
       "frontend_tecnology": "VueJS|Angular|React-Native",
       "backend_tecnology": "NodeJS",
       "databases": "ORACLE|PosgresSQL",
-      "errors_count": 24,
       "warning_count": 9,
+      "errors_count": 24,
       "deploy_count": 8,
       "percentage_completion": 62,
-      "report_nc": 125,
-      "status": "En Desarrollo"
+      "report_nc": "https://"
     },
     {
       "id": 100,
@@ -50,21 +48,20 @@
     },
     {
       "id": 101,
-      "project_name": "Comfenalco APP",
-      "repo_url": "https://",
-      "client": "Comfenalco",
-      "developers": "Joan Alexis Cordoba Narvaez",
-      "ci": false,
-      "cd": true,
-      "frontend_tecnology": "React-Native",
-      "backend_tecnology": "NodeJS",
-      "databases": "ORACLE|PosgresSQL",
-      "errors_count": 24,
-      "warning_count": 9,
-      "deploy_count": 8,
-      "percentage_completion": 12,
-      "report_nc": 125,
-      "status": "En Desarrollo"
+      "project_name": "",
+      "client": "",
+      "repo_url": "",
+      "developers": "",
+      "cl": "",
+      "cd": "",
+      "frontend_tecnology": "",
+      "backend_tecnology": "",
+      "databases": "",
+      "warning_count": "",
+      "errors_count": "",
+      "deploy_count": "",
+      "percentage_completion": "",
+      "report_nc": ""
     },
     {
       "project_name": "App-OL",
@@ -83,6 +80,83 @@
       "report_nc": "",
       "ci": "",
       "id": 102
+    },
+    {
+      "project_name": "App-OL",
+      "client": "Olsoftware",
+      "repo_url": "https://",
+      "cd": "",
+      "developers": "Joan Alexis Cordoba Narvaez",
+      "frontend_tecnology": "VueJS",
+      "backend_tecnology": "Python",
+      "databases": "SQLserver",
+      "id": 103
+    },
+    {
+      "id": 104
+    },
+    {
+      "id": 105,
+      "project_name": "Campus virtual",
+      "client": "Univalle",
+      "repo_url": "https://",
+      "developers": "Johan D",
+      "cd": "",
+      "frontend_tecnology": "React Native",
+      "backend_tecnology": "Java",
+      "databases": "PostgressQL",
+      "report_nc": "https://"
+    },
+    {
+      "id": 106,
+      "project_name": "App microservicios",
+      "client": "Univalle",
+      "repo_url": "https://",
+      "developers": "Johan Diaz",
+      "frontend_tecnology": "Angular",
+      "backend_tecnology": ".Net",
+      "databases": "SQLserver",
+      "report_nc": "https://"
+    },
+    {
+      "project_name": "Maecenas Mi LLP",
+      "client": "Univalle",
+      "repo_url": "https://",
+      "cd": "",
+      "developers": "Leandro Acevedo",
+      "frontend_tecnology": "React",
+      "backend_tecnology": "Python",
+      "databases": "SQLserver",
+      "id": 107
+    },
+    {
+      "project_name": "Comfenalco APP",
+      "client": "Olsoftware",
+      "repo_url": "https://",
+      "developers": "Leandro Acevedo",
+      "frontend_tecnology": "React Native",
+      "backend_tecnology": "Python",
+      "databases": "PostgressQL",
+      "id": 108
+    }
+  ],
+  "users": [
+    {
+      "id": 102,
+      "name": "aaaaa",
+      "last_name": "Stevens",
+      "url_photo": "",
+      "rol": 1,
+      "list": "VueJS|Angular|.Net|ReactNative|React|Java|Python|SQLServer|NodeJS",
+      "area": "Soporte"
+    },
+    {
+      "id": 103,
+      "name": "Johan",
+      "last_name": "Diaz",
+      "rol": "staff",
+      "list": "VueJS",
+      "area": "NodeJS"
     }
   ]
 }

@@ -12,9 +12,9 @@
   .content{
     background: var(--light);
     margin: 20px;
+    height: 550px;
     border-radius: 12px;
-    overflow: overlay;
-    position: inherit;
+    overflow: auto;
   }
 
 
