@@ -5,6 +5,7 @@ import Reporte from "./Reporte";
 import Servidor from "./Servidor";
 import Commits from "./Commits";
 import Entregas from "./Entregas";
+import Nombre from "./NombreNoti";
 
 const Home = (showData) => {
 
@@ -26,6 +27,10 @@ const Home = (showData) => {
     let grados = (clima[0]?.main.temp - 273.15).toFixed();
     return (
         <>
+
+            <div className="containerTitle">
+                <Nombre />
+            </div>
             <div className="containerDash">
                 {clima != true ? (
                     <div className="contenedorClima">
@@ -46,7 +51,7 @@ const Home = (showData) => {
                 <Commits />
 
             </div>
-            {/* <Entregas /> */}
+            <Entregas />
 
 
 
