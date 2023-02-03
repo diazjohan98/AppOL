@@ -47,6 +47,12 @@ export default class Usuarios extends Component {
             this.peticionGet();
         })
     }
+    peticionDelete = () => {
+        axios.delete(`http://localhost:3000/users/${this.state.form.id}`).then(response => {
+            this.setState({ modalEliminar: false })
+            this.peticionGet();
+        })
+    }
 
     modalInsertar = () => {
         this.setState({ modalInsertar: !this.state.modalInsertar });
@@ -122,7 +128,7 @@ export default class Usuarios extends Component {
                                         <td className="btnEditEli">
                                             <button><FaIcons.FaRegEdit className="iconoEditar" onClick={() => { this.seleccionarEmpresa(project); this.modalInsertar() }} /></button>
                                             {"   "}
-                                            <button><FaIcons.FaTrashAlt className="iconoEliminar" /></button>
+                                            <button><FaIcons.FaTrashAlt className="iconoEliminar"  onClick={() => { this.seleccionarEmpresa(project); this.setState({ modalEliminar: true }) }} /></button>
                                         </td>
 
                                     </tr>
@@ -177,13 +183,23 @@ export default class Usuarios extends Component {
 
                     <ModalFooter>
                         {this.state.tipoModal === 'insertar' ?
-                            <button className="btn btn-success" onClick={() => this.peticionPost()}>
+                            <button className="saveBoton btn btn-success" onClick={() => this.peticionPost()}>
                                 Insertar
                             </button> : <button className="btn btn-primary" onClick={() => this.peticionPut()}>
                                 Actualizar
                             </button>
                         }
                         <button className="deletBoton" onClick={() => this.modalInsertar()}>Cancelar</button>
+                    </ModalFooter>
+                </Modal>
+
+                <Modal isOpen={this.state.modalEliminar}>
+                    <ModalBody>
+                        Estás seguro que deseas eliminar {form && form.project_name}
+                    </ModalBody>
+                    <ModalFooter>
+                        <button className="saveBoton" onClick={() => this.peticionDelete()}>Sí</button>
+                        <button className="deletBoton" onClick={() => this.setState({ modalEliminar: false })}>No</button>
                     </ModalFooter>
                 </Modal>
             </div >

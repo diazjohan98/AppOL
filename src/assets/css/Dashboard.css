@@ -9,10 +9,10 @@
     
   }
 
-  .content{
-    background: var(--light);
+  .content {
+    /* background: var(--light); */
     margin: 20px;
-    height: 550px;
+    height: 39rem;
     border-radius: 12px;
     overflow: auto;
   }
@@ -26,6 +26,7 @@
 .sidebar{
     width: 14rem;
     height: calc(100vh - 52px);
+    background: #fff;
     border-right: 1px solid var(--gray);
     
 }

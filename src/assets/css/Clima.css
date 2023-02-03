@@ -1,34 +1,52 @@
-
-.climaCity{
-    position: absolute;
-    padding-left: 376px;
-    padding-top: 28px;
-    font-weight: bold;
-}
-.climaCity2{
-    position: absolute;
-    padding-left: 376px;
-    padding-top: 42px;
-    font-size: 14px;
-}
-.climaTemp{
-    position: absolute;
-    font-size: 30px;
-    padding-left: 300px;
-    padding-top: 20px;
-}
-.card-desc{
-    position: absolute;
-    padding-left: 250px;
-    padding-top: 18px;
-}
-.clima-cali{
-    font-size: 30px;
+.containerDash {
+    display: flex;
 }
 
-.imgClima{
-    width: 400px;
-    margin-left: 20px;
-    margin-top: 20px;
+.contenedorClima {
+    width: 50%;
+    background-image: url(https://www.elpais.com.co/files/article_main/uploads/2017/07/24/5976cf4d96080.jpeg);
+    background-size: 100%;
     border-radius: 12px;
+    height: 365px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.climaCity {
+
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.climaCity2 {
+    font-size: 14px;
+    color: #fff;
+}
+
+.climaTemp {
+    font-size: 30px;
+    color: #fff;
+}
+
+.card-desc {}
+
+.clima-cali {
+    font-size: 30px;
+    color: #fff;
+}
+
+.imgClima {
+    width: 95%;
+    margin: 20px;
+    /* margin-top: 20px; */
+    border-radius: 12px;
+}
+
+.containerDashPeticiones {
+    display: flex;
 }

@@ -3,9 +3,12 @@ import logo from "../../assets/img/LogoOl.jfif";
 import React from "react";
 import axios from "axios";
 // import { userLogin } from "../../services/apiLogin";
-import { useHistory  } from 'react-router-dom';
+
+
 
 class Login extends React.Component{
+
+  
 
   state = {
     form: {
@@ -41,6 +44,7 @@ class Login extends React.Component{
         const usuarios = response.data;
         if (usuarios.length >= 1) {
           console.log("Esa era mi muchacho");
+         window.location.replace("/home")
         } else {
           this.setState({
             error: true,
