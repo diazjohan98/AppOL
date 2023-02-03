@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { climaCali } from "../../../services/apiClima";
 import "../../../assets/css/Clima.css";
+import Reporte from "./Reporte";
+import Servidor from "./Servidor";
+import Commits from "./Commits";
+import Entregas from "./Entregas";
 
 const Home = (showData) => {
 
     let urlClima = "";
     let iconUrl = "";
+
 
     const [clima, setClima] = useState(true)
     // const params = useParams();
@@ -13,25 +18,38 @@ const Home = (showData) => {
         climaCali(setClima)
     }, [])
 
-    if(showData){
+    if (showData) {
         urlClima = "http://openweathermap.org/img/w/";
         iconUrl = urlClima + clima[0]?.weather[0].icon + ".png"
     }
-    
+
     let grados = (clima[0]?.main.temp - 273.15).toFixed();
     return (
         <>
-            {clima != true ? (
-                <div className="contenedorClima">
-                    <p className="card-desc"><img src={iconUrl} alt="iconoClima"></img></p>
-                    <p className="climaTemp">{grados}°C</p>
-                    <p className="climaCity">{clima[0]?.name}</p>
-                    <p className="climaCity2">Valle</p>
-                    <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="imgClima" alt="" />
+            <div className="containerDash">
+                {clima != true ? (
+                    <div className="contenedorClima">
+                        <p className="card-desc"><img src={iconUrl} alt="iconoClima"></img></p>
+                        <p className="climaTemp">{grados}°C</p>
+                        <p className="climaCity">{clima[0]?.name} <br /> <p className="climaCity2">Valle</p> </p>
+                        {/* <img src="https://images.pexels.com/photos/11815576/pexels-photo-11815576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="imgClima" alt="" /> */}
 
-                </div>
+                    </div>
 
-            ) : ('No hay clima')}
+                ) : ('No hay clima')}
+
+                <Reporte />
+
+            </div>
+            <div className="containerDashPeticiones">
+                <Servidor />
+                <Commits />
+
+            </div>
+            {/* <Entregas /> */}
+
+
+
         </>
     )
 }

@@ -115,9 +115,11 @@ button{
     color: #fff;
     border-radius: 5px;
     padding: 6px;
+    border: none;
 }
 .saveBoton:hover{
-    background: #389bc9;
+    background: #4486dc;
+    border: none;
 }
 
 .deletBoton{

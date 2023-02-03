@@ -13,57 +13,6 @@
   ],
   "projects": [
     {
-      "id": 99,
-      "project_name": "Maecenas Mi LLP",
-      "client": "Enim Nunc Ut Incorporated",
-      "repo_url": "https://",
-      "developers": "Joan Alexis Cordoba Narvaez",
-      "cd": true,
-      "frontend_tecnology": "VueJS|Angular|React-Native",
-      "backend_tecnology": "NodeJS",
-      "databases": "ORACLE|PosgresSQL",
-      "warning_count": 9,
-      "errors_count": 24,
-      "deploy_count": 8,
-      "percentage_completion": 62,
-      "report_nc": "https://"
-    },
-    {
-      "id": 100,
-      "project_name": "Balance",
-      "repo_url": "https://",
-      "client": "Celsia",
-      "developers": "Johan Sebastian Diaz ",
-      "ci": true,
-      "cd": false,
-      "frontend_tecnology": "VueJS",
-      "backend_tecnology": ".net",
-      "databases": "SQLSERVER",
-      "errors_count": 24,
-      "warning_count": 9,
-      "deploy_count": 8,
-      "percentage_completion": 82,
-      "report_nc": 125,
-      "status": "En Desarrollo"
-    },
-    {
-      "id": 101,
-      "project_name": "",
-      "client": "",
-      "repo_url": "",
-      "developers": "",
-      "cl": "",
-      "cd": "",
-      "frontend_tecnology": "",
-      "backend_tecnology": "",
-      "databases": "",
-      "warning_count": "",
-      "errors_count": "",
-      "deploy_count": "",
-      "percentage_completion": "",
-      "report_nc": ""
-    },
-    {
       "project_name": "App-OL",
       "client": "Olsoftware",
       "repo_url": "https://",
@@ -91,9 +40,6 @@
       "backend_tecnology": "Python",
       "databases": "SQLserver",
       "id": 103
-    },
-    {
-      "id": 104
     },
     {
       "id": 105,
@@ -138,6 +84,17 @@
       "backend_tecnology": "Python",
       "databases": "PostgressQL",
       "id": 108
+    },
+    {
+      "project_name": "Maecenas Mi LLP",
+      "client": "Enim Nunc Ut Incorporated",
+      "repo_url": "https://",
+      "ci": "",
+      "developers": "Leandro",
+      "frontend_tecnology": "React Native",
+      "backend_tecnology": "Python",
+      "databases": "MongoDB",
+      "id": 109
     }
   ],
   "users": [
@@ -149,14 +106,67 @@
       "rol": 1,
       "list": "VueJS|Angular|.Net|ReactNative|React|Java|Python|SQLServer|NodeJS",
       "area": "Soporte"
-    },
-    {
-      "id": 103,
-      "name": "Johan",
-      "last_name": "Diaz",
-      "rol": "staff",
-      "list": "VueJS",
-      "area": "NodeJS"
     }
+  ],
+
+  "dashboard_cards": [
+    {
+      "project_regis": 50,
+      "time": "15 dias",
+      "project_desarr": 12,
+      "total": "12",
+      "project_sinRes": 24,
+      "timeSinRe": "1 dia",
+      "totalErrores": 502,
+      "timeError": "2 dias"
+    }
+  ],
+
+  "cpu_report": [
+    { 
+      "id": 1,
+      "time": [100, 200, 500, 400, 800, 100, 200, 300, 200, 500, 400, 800, 100, 200],
+      "projects": [10, 20, 30, 40, 50, 60, 70]
+    },
+    
+      { 
+      "id": 2,
+      "time": [ 100, 800, 100, 300, 200, 100, 500, 100, 800, 100, 300, 200, 100, 500],
+      "projects": [10, 20, 30, 40, 50, 60, 70]
+    }
+    
+    
+  ],
+
+  "report_commits": [
+    { 
+      "id": 1,
+      "time": [100, 200, 500, 400, 800, 100, 200, 300, 200, 500, 400, 800, 100, 200],
+      "projects": [10, 20, 30, 40, 50, 60, 70]
+    },
+    
+      { 
+      "id": 2,
+      "time": [ 100, 800, 100, 300, 200, 100, 500, 100, 800, 100, 300, 200, 100, 500],
+      "projects": [10, 20, 30, 40, 50, 60, 70]
+    }
+    
+    
+  ],
+
+  "release_resume": [
+    { 
+      "id": 1,
+      "time": [100, 200, 500, 400, 800, 100, 200, 300, 200, 500, 400, 800, 100, 200],
+      "projects": [10, 20, 30, 40, 50, 60, 70]
+    },
+    
+      { 
+      "id": 2,
+      "time": [ 100, 800, 100, 300, 200, 100, 500, 100, 800, 100, 300, 200, 100, 500],
+      "projects": [10, 20, 30, 40, 50, 60, 70]
+    }
+    
+    
   ]
 }

@@ -1,0 +1,37 @@
+.reporteServidor{
+    width: 50%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.titlePrincipal{
+    font-weight: bold;
+}
+
+.parrafo{
+    font-size: 11px;
+}
+
+.parra{
+    display: inline;
+    font-size: 9px;
+}
+
+.parra2{
+    margin: 20px;
+}
+
+.parra3{
+    font-size: 20px;
+    color: #660E9C;
+    font-weight: bold;
+}
+
+.parra4{
+    font-size: 20px;
+    color: #660E9C;
+    font-weight: bold;
+    margin: 20px;
+}

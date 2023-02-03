@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route} from 'react-router-dom'
 import "../../assets/css/Dashboard.css";
+import { BrowserRouter, Route, Routes, Navigate} from 'react-router-dom'
 import Sidebar from "./Sidebar";
 import Home from "./pages/Home";
 import Proyectos from "./pages/Proyectos";
@@ -11,18 +11,37 @@ import NavbarNav from "./NavbarNav";
 class Dashboard extends React.Component {
   render() {
     return (
-     <Router>
+     <BrowserRouter>
+     
       <NavbarNav />
         <div className="contenido-dashboard">
           <Sidebar />
           <div className="content w-100">
-            <Route path="/home" exact={true} component={Home} />
-            <Route path="/proyectos" exact={true} component={Proyectos} />
-            <Route path="/usuarios" exact={true} component={Usuarios} />
-            <Route path="/roles" exact={true} component={Roles} />
+      
+         <Routes>
+            {/* <Route path="/home" exact>
+              <Home />
+            </Route>
+            <Route path="/proyectos" exact>
+              <Proyectos />
+            </Route>
+            <Route path="/usuarios" exact>
+              <Usuarios />
+            </Route>
+            <Route path="/roles" exact>
+              <Roles />
+            </Route> */}
+            
+            <Route path="/home"  element={<Home />} />
+            <Route path="/proyectos"  element={<Proyectos />} />
+            <Route path="/usuarios"  element={<Usuarios />} />
+            <Route path="/roles"  element={<Roles />} />
+            {/* <Route path="/*" element={<Navigate to='/login' />} /> */}
+         
+            </Routes>
           </div>
         </div>
-     </Router>
+     </BrowserRouter>
     );
   }
 }

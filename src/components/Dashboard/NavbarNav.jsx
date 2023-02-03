@@ -21,6 +21,7 @@ export default class NavbarNav extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.logout = this.logout.bind(this);
     this.state = {
       isOpen: false
     };
@@ -29,7 +30,13 @@ export default class NavbarNav extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
+
   }
+
+  logout(){
+    // firebase.auth().signOut().then(console.log);
+  }
+
   render() {
     return (
       <div>
@@ -52,7 +59,7 @@ export default class NavbarNav extends React.Component {
                     Configuraciones
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
+                  <DropdownItem onClick={this.logout}>
                     Cerrar Sesión
                   </DropdownItem>
                 </DropdownMenu>
