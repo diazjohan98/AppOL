@@ -12,7 +12,6 @@ const Nombre = () => {
         peticionNombre(setNombre)
     }, [])
     
-    console.log(nombre)
 
     return(
         <div>

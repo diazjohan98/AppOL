@@ -1,11 +1,10 @@
 import React from "react";
 import "../../assets/css/Dashboard.css";
-import { BrowserRouter, Route, Routes, Navigate} from 'react-router-dom'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Sidebar from "./Sidebar";
 import Home from "./pages/Home";
 import Proyectos from "./pages/Proyectos";
 import Usuarios from "./pages/Usuarios";
-import Roles from "./pages/Roles";
 import NavbarNav from "./NavbarNav";
 
 class Dashboard extends React.Component {
@@ -19,23 +18,11 @@ class Dashboard extends React.Component {
           <div className="content w-100">
       
          <Routes>
-            {/* <Route path="/home" exact>
-              <Home />
-            </Route>
-            <Route path="/proyectos" exact>
-              <Proyectos />
-            </Route>
-            <Route path="/usuarios" exact>
-              <Usuarios />
-            </Route>
-            <Route path="/roles" exact>
-              <Roles />
-            </Route> */}
-            
+    
             <Route path="/home"  element={<Home />} />
             <Route path="/proyectos"  element={<Proyectos />} />
             <Route path="/usuarios"  element={<Usuarios />} />
-            <Route path="/roles"  element={<Roles />} />
+            {/* <Route path="/roles"  element={<Roles />} /> */}
             {/* <Route path="/*" element={<Navigate to='/login' />} /> */}
          
             </Routes>

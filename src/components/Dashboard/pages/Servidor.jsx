@@ -39,15 +39,15 @@ function Servidor() {
         peticionServidor(setServidor)
     }, [])
     
-    const estadoInicia =  [
+    const estadoInicial =  [
         {
-            label: 'Time 1',
+            label: 'Tiempo de uso',
             data: servidor[0]?.time,
             tension: 0.2,
             borderColor: `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`,
         },
         {
-            label: 'Time 2',
+            label: 'Proyectos',
             data: servidor[1]?.time,
             tension: 0.2,
             borderColor: `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`,
@@ -77,10 +77,10 @@ function Servidor() {
 
     const data = useMemo(function () {
         return {
-            datasets: estadoInicia,
+            datasets: estadoInicial,
             labels,
         }
-    }, [labels]);
+    }, [estadoInicial]);
 
     // console.log(data.datasets[0].data);
 

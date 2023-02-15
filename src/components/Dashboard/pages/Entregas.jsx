@@ -63,7 +63,8 @@ function Entregas() {
 
     const data = useMemo(function () {
         return {
-            datasets: estadoInicia
+            datasets: estadoInicia,
+            
            
         }
     }, []);

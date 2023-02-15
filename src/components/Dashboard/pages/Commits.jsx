@@ -59,13 +59,7 @@ function Servidor() {
 
     const options = {
         responsive: true,
-        scales: {
-            xAxes: [{
-              barPercentage: 1,
-              categoryPercentage: 0.6
-            }],
-           
-          }
+        
     }
 
     let labels = ["Jan", "Feb", "Mar", "Apr", "May"]
