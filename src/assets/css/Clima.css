@@ -5,6 +5,7 @@
 .contenedorClima {
     width: 50%;
     background-image: url(https://www.elpais.com.co/files/article_main/uploads/2017/07/24/5976cf4d96080.jpeg);
+    background-image: no-repeat;
     background-size: 100%;
     border-radius: 12px;
     height: 365px;
@@ -49,4 +50,10 @@
 
 .containerDashPeticiones {
     display: flex;
+}
+
+.title{
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 20px;
 }

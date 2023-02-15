@@ -3,12 +3,14 @@
     {
       "id": 1,
       "user": "johan.d",
-      "password": "1234"
+      "password": "1234",
+      "name": "Johan"
     },
     {
       "id": 2,
       "user": "sebas.d",
-      "password": "12345"
+      "password": "12345",
+      "name": "Sebas"
     }
   ],
   "projects": [
@@ -86,15 +88,15 @@
       "id": 108
     },
     {
+      "id": 109,
       "project_name": "Maecenas Mi LLP",
       "client": "Enim Nunc Ut Incorporated",
       "repo_url": "https://",
-      "ci": "",
       "developers": "Leandro",
-      "frontend_tecnology": "React Native",
+      "frontend_tecnology": "VueJS",
       "backend_tecnology": "Python",
       "databases": "MongoDB",
-      "id": 109
+      "report_nc": "https://"
     }
   ],
   "users": [
@@ -102,13 +104,183 @@
       "id": 102,
       "name": "aaaaa",
       "last_name": "Stevens",
-      "url_photo": "",
+      "url_photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwtgaAuryVxEtJE6QnAwQieh2Z9fIeT-yS0-4a_I1Rw&s",
       "rol": 1,
       "list": "VueJS|Angular|.Net|ReactNative|React|Java|Python|SQLServer|NodeJS",
       "area": "Soporte"
+    },
+    {
+      "id": 82,
+      "name": "Haley",
+      "last_name": "Moss",
+      "url_photo": "https://avatarfiles.alphacoders.com/170/thumb-170908.jpg",
+      "rol": 2,
+      "list": "VueJS|SQLServer",
+      "area": "Staff"
+    },
+    {
+      "id": 83,
+      "name": "Rosalyn",
+      "last_name": "Potts",
+      "url_photo": "",
+      "rol": 2,
+      "list": "SQLServer|.Net|Python|VueJS|Angular|Java|React|React-Native|NodeJS",
+      "area": "Soporte"
+    },
+    {
+      "id": 84,
+      "name": "Emily",
+      "last_name": "Patrick",
+      "url_photo": "",
+      "rol": 2,
+      "list": "Python|SQLServer|React",
+      "area": "Fabrica"
+    },
+    {
+      "id": 85,
+      "name": "Camden",
+      "last_name": "Lopez",
+      "url_photo": "",
+      "rol": 2,
+      "list": "Angular",
+      "area": "Fabrica"
+    },
+    {
+      "id": 86,
+      "name": "Camilla",
+      "last_name": "Owens",
+      "url_photo": "",
+      "rol": 2,
+      "list": "Angular|React|Python|Java",
+      "area": "Soporte"
+    },
+    {
+      "id": 87,
+      "name": "Imani",
+      "last_name": "Walsh",
+      "url_photo": "",
+      "rol": 1,
+      "list": "React-Native|SQLServer|NodeJS|Angular|React|VueJS",
+      "area": "Soporte"
+    },
+    {
+      "id": 88,
+      "name": "Lee",
+      "last_name": "Lancaster",
+      "url_photo": "",
+      "rol": 2,
+      "list": "React-Native",
+      "area": "Staff"
+    },
+    {
+      "id": 89,
+      "name": "Kaye",
+      "last_name": "Richard",
+      "url_photo": "",
+      "rol": 2,
+      "list": "NodeJS|Angular|SQLServer|.Net|React-Native|React",
+      "area": "Staff"
+    },
+    {
+      "id": 90,
+      "name": "Ulysses",
+      "last_name": "Powers",
+      "url_photo": "",
+      "rol": 2,
+      "list": "SQLServer|.Net|React",
+      "area": "Staff"
+    },
+    {
+      "id": 91,
+      "name": "Merritt",
+      "last_name": "Bender",
+      "url_photo": "",
+      "rol": 2,
+      "list": "VueJS|Python|Java|SQLServer|Angular|React-Native|.Net",
+      "area": "Soporte"
+    },
+    {
+      "id": 92,
+      "name": "Joel",
+      "last_name": "Logan",
+      "url_photo": "",
+      "rol": 2,
+      "list": ".Net|SQLServer|Angular|VueJS",
+      "area": "Soporte"
+    },
+    {
+      "id": 93,
+      "name": "Dorian",
+      "last_name": "Lucas",
+      "url_photo": "",
+      "rol": 2,
+      "list": "Angular|SQLServer|.Net|Java|NodeJS|Python",
+      "area": "Staff"
+    },
+    {
+      "id": 94,
+      "name": "Garth",
+      "last_name": "Mccoy",
+      "url_photo": "",
+      "rol": 1,
+      "list": "Python|SQLServer|React|NodeJS",
+      "area": "Fabrica"
+    },
+    {
+      "id": 95,
+      "name": "Porter",
+      "last_name": "Osborn",
+      "url_photo": "",
+      "rol": 2,
+      "list": "React-Native|Python|.Net|VueJS|React|SQLServer|Java|Angular|NodeJS",
+      "area": "Fabrica"
+    },
+    {
+      "id": 96,
+      "name": "Kamal",
+      "last_name": "Hogan",
+      "url_photo": "",
+      "rol": 2,
+      "list": "NodeJS|SQLServer|VueJS|Java|Python",
+      "area": "Soporte"
+    },
+    {
+      "id": 97,
+      "name": "Garrison",
+      "last_name": "Daniel",
+      "url_photo": "",
+      "rol": 2,
+      "list": "NodeJS|SQLServer|VueJS|Python",
+      "area": "Fabrica"
+    },
+    {
+      "id": 98,
+      "name": "Anthony",
+      "last_name": "Church",
+      "url_photo": "",
+      "rol": 1,
+      "list": "React|Python|SQLServer|VueJS|React-Native|.Net",
+      "area": "Fabrica"
+    },
+    {
+      "id": 99,
+      "name": "Buffy",
+      "last_name": "Sweet",
+      "url_photo": "",
+      "rol": 1,
+      "list": "React-Native|Angular|VueJS|SQLServer",
+      "area": "Staff"
+    },
+    {
+      "id": 100,
+      "name": "David",
+      "last_name": "Cabrera",
+      "url_photo": "",
+      "rol": 1,
+      "list": "React-Native|VueJS|React|SQLServer|Java|Angular",
+      "area": "Soporte"
     }
   ],
-
   "dashboard_cards": [
     {
       "project_regis": 50,
@@ -121,52 +293,176 @@
       "timeError": "2 dias"
     }
   ],
-
   "cpu_report": [
-    { 
+    {
       "id": 1,
-      "time": [100, 200, 500, 400, 800, 100, 200, 300, 200, 500, 400, 800, 100, 200],
-      "projects": [10, 20, 30, 40, 50, 60, 70]
+      "time": [
+        100,
+        200,
+        500,
+        400,
+        800,
+        100,
+        200,
+        300,
+        200,
+        500,
+        400,
+        800,
+        100,
+        200
+      ],
+      "projects": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70
+      ]
     },
-    
-      { 
+    {
       "id": 2,
-      "time": [ 100, 800, 100, 300, 200, 100, 500, 100, 800, 100, 300, 200, 100, 500],
-      "projects": [10, 20, 30, 40, 50, 60, 70]
+      "time": [
+        100,
+        800,
+        100,
+        300,
+        200,
+        100,
+        500,
+        100,
+        800,
+        100,
+        300,
+        200,
+        100,
+        500
+      ],
+      "projects": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70
+      ]
     }
-    
-    
   ],
-
   "report_commits": [
-    { 
+    {
       "id": 1,
-      "time": [100, 200, 500, 400, 800, 100, 200, 300, 200, 500, 400, 800, 100, 200],
-      "projects": [10, 20, 30, 40, 50, 60, 70]
+      "time": [
+        100,
+        200,
+        500,
+        400,
+        800,
+        100,
+        200,
+        300,
+        200,
+        500,
+        400,
+        800,
+        100,
+        200
+      ],
+      "projects": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70
+      ]
     },
-    
-      { 
+    {
       "id": 2,
-      "time": [ 100, 800, 100, 300, 200, 100, 500, 100, 800, 100, 300, 200, 100, 500],
-      "projects": [10, 20, 30, 40, 50, 60, 70]
+      "time": [
+        100,
+        800,
+        100,
+        300,
+        200,
+        100,
+        500,
+        100,
+        800,
+        100,
+        300,
+        200,
+        100,
+        500
+      ],
+      "projects": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70
+      ]
     }
-    
-    
   ],
-
   "release_resume": [
-    { 
+    {
       "id": 1,
-      "time": [100, 200, 500, 400, 800, 100, 200, 300, 200, 500, 400, 800, 100, 200],
-      "projects": [10, 20, 30, 40, 50, 60, 70]
+      "time": [
+        100,
+        200,
+        500,
+        400
+      ],
+      "projects": [
+        10,
+        20
+      ]
     },
-    
-      { 
+    {
       "id": 2,
-      "time": [ 100, 800, 100, 300, 200, 100, 500, 100, 800, 100, 300, 200, 100, 500],
-      "projects": [10, 20, 30, 40, 50, 60, 70]
+      "time": [
+        100,
+        800,
+        100,
+        300
+      ],
+      "projects": [
+        10,
+        20,
+        30
+      ]
     }
-    
-    
+  ],
+  "notification": [
+    {
+      "id": 1,
+      "type": "error",
+      "details": "Error en el despliegue de DBC",
+      "time": "27/04/2022 18:65:00"
+    },
+    {
+      "id": 1,
+      "type": "warning",
+      "details": "Se registraron NC's en GIASS",
+      "time": "27/04/2022 18:65:00"
+    },
+    {
+      "id": 1,
+      "type": "info",
+      "details": "GIASS fue desplegado",
+      "time": "27/04/2022 18:65:00"
+    },
+    {
+      "id": 1,
+      "type": "warning",
+      "details": "Se registraron NC's en Balance",
+      "time": "27/04/2022 18:65:00"
+    }
   ]
+  
 }

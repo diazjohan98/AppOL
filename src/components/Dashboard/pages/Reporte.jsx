@@ -4,7 +4,7 @@ import { peticionCard } from "../../../services/apiCards";
 
 const Reporte = () => {
 
-    const [card, setCard] = useState(true)
+    const [card, setCard] = useState({})
     // const params = useParams();
     useEffect(() => {
         peticionCard(setCard)

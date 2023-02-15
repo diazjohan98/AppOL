@@ -107,7 +107,18 @@ export default class Proyectos extends Component {
         this.peticionGet();
     }
 
+
+
     render() {
+
+        const heading = ["id", "proyectos", "Clientes", "Repositorios", "Desarrolladores", "CL", "CD", "Frontend", "Backend", "BD", "Alertas", "Errores", "Cant.Despliegues", "Avance", "Reporte N°", "Status"];
+        const body = [];
+        this.state.data.forEach(e => {
+            body.push(Object.values(e));
+        })
+
+        console.log(body);
+
         const { form } = this.state;
 
         return (
@@ -122,7 +133,8 @@ export default class Proyectos extends Component {
                     <table className="table">
                         <thead>
                             <tr>
-                                <th scope="col">ID</th>
+                                {heading.map((head, headID) => <th key={headID}>{head}</th>)}
+                                {/* <th scope="col">ID</th>
                                 <th scope="col">Proyectos</th>
                                 <th scope="col">Clientes</th>
                                 <th scope="col">Repositorios</th>
@@ -137,13 +149,21 @@ export default class Proyectos extends Component {
                                 <th scope="col">Cant.Despliegues</th>
                                 <th scope="col">Avance</th>
                                 <th scope="col">Reporte N°</th>
-                                <th scope="col">Status</th>
+                                <th scope="col">Status</th> */}
                             </tr>
                         </thead>
 
 
                         <tbody>
-                            {this.state.data.map(project => {
+                         <tr>       
+                        {body.map((val, rowID) => <td key={rowID}>{val}</td>)}
+                        {/* <td className="btnEditEli">
+                                            <button><FaIcons.FaRegEdit className="iconoEditar" onClick={() => { this.seleccionarEmpresa(project); this.modalInsertar() }} /></button>
+                                            {"   "}
+                                            <button><FaIcons.FaTrashAlt className="iconoEliminar" onClick={() => { this.seleccionarEmpresa(project); this.setState({ modalEliminar: true }) }} /></button>
+                                        </td> */}
+                        </tr>
+                            {/* {this.state.data.map(project => {
                                 return (
                                     <tr>
                                         <td>{project.id}</td>
@@ -170,7 +190,7 @@ export default class Proyectos extends Component {
 
                                     </tr>
                                 )
-                            })}
+                            })} */}
 
                         </tbody>
                     </table>

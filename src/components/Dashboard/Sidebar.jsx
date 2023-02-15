@@ -17,9 +17,7 @@ const Sidebar = () => {
                 <li>
                     <NavLink to="/usuarios"   className="rounded py-2 w-100 m-20 d-inline-block px-3   " ><FaIcons.FaUserAlt className="me-3" /> Usuarios</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/roles"   className="rounded py-2 w-100 m-20 d-inline-block px-3   " ><FaIcons.FaSyncAlt className="me-3"  /> Roles</NavLink>
-                </li>
+                
             </ul>
         </div>
     )

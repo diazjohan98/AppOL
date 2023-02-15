@@ -6,6 +6,7 @@ import * as FaIcons from "react-icons/fa"
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import axios from "axios";
 
+
 const url = "http://localhost:3000/users"
 // const urlPut = `http://localhost:3000/projects/${id}`
 
@@ -104,6 +105,7 @@ export default class Usuarios extends Component {
                         <thead>
                             <tr>
                                 <th scope="col">ID</th>
+                                <th scope="col">Photo</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Apellido</th>
                                 <th scope="col">Rol</th>
@@ -119,6 +121,7 @@ export default class Usuarios extends Component {
                                 return (
                                     <tr>
                                         <td>{project.id}</td>
+                                        <td><img className="fotoUsuario" src={project.url_photo} alt="foto del usuario"/></td>
                                         <td>{project.name}</td>
                                         <td>{project.last_name}</td>
                                         <td>{project.rol}</td>

@@ -155,3 +155,8 @@ select[multiple] {
   select[multiple]:active {
     height: auto;
   }
+
+  .fotoUsuario{
+    border-radius: 50%;
+    width: 20px;
+}
